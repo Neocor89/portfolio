@@ -76,5 +76,23 @@
         }
       }
     }
+
+    .about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    .contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #36e4b6;
+      }
+    }
   }
 }
