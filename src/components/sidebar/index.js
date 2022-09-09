@@ -1,11 +1,18 @@
 import { Link, NavLink } from 'react-router-dom'
+
+//: scss
 import './index.scss'
+
+//: Images
 import LogoPortfolio from '../../assets/images/logo-portfolio.png'
 import LogoSubtitle from '../../assets/images/logo-subtitle.png'
+
+//: Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
+  faInstagram,
   faLinkedin,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
@@ -58,14 +65,14 @@ const Sidebar = () => (
         <a
           target="_blank"
           rel="noreferrer"
-          href="CREATE MY NEW PRO TWITTER ACCOUNT"
+          href="CREATE MY NEW PRO TWITTER ACCOUNT AND ADD LINK"
         >
           <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
         </a>
       </li>
       <li>
-        <a target="_blank" rel="noreferrer" href=" STOP IN THIS FIELD">
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+        <a target="_blank" rel="noreferrer" href=" STOP CODING IN THIS FIELD">
+          <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
         </a>
       </li>
     </ul>
