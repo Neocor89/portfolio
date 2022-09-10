@@ -1,0 +1,60 @@
+/* --- 
+ * VARIABLES
+ --- */
+ $col-brand-darkPrim: #414555;
+ $col-brand-primary: #555b6e;
+ $col-brand-secondary: #66d6a4;
+ $white: #fff;
+ $black: #000;
+ $col-jet: #333;
+ $fontDeco1: 'Great Vibes';
+ $fontDeco2: 'La Belle Aurore';
+
+/*-> VARIABLES - 
+- ANIMATION <-*/
+ $lightHide: 0.7;
+ $timeAnime: 1s;
+ $durationAnime: 1,7s;
+ $backAnime: backwards;
+
+
+
+/* --- 
+ * MIXINS
+ --- */
+
+ @mixin fade-animation($time: $timeAnime, $delay: $durationAnime, $type: $backAnime) {
+  animation: fadeIn $time $delay $type;
+}
+
+@mixin formatting-title {  
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+
+@mixin grid-position($grid: $grid-size, $gap: $col-gap) {
+ display: grid;
+ grid-template-columns: repeat(3, minmax(0, $grid));
+ column-gap: $gap;
+}
+
+/*
+ <-----------
+:: RESPONSIVE MIXIXNS :: 
+---------------------->
+*/
+
+@mixin mobile-only {
+ @media screen and (max-width: map-get($breakpoints, mobile)) {
+     @content;        
+ }
+}
+
+@mixin tablet-only {
+ @media screen and (max-width: map-get($breakpoints, tablet)) {
+     @content;        
+ }
+}
