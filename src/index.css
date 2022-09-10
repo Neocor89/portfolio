@@ -5,7 +5,7 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Urbanist', sans-serif;
   color: #444;
-  background: #414555;
+  background: #3f4351;  /*+ :: Tester variante couleur #4a4f60   :: +*/
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
