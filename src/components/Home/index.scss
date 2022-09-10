@@ -1,3 +1,14 @@
+/* 
+ *:: VARIABLES ::*/
+$col-brand-darkPrim: #414555;
+$col-brand-primary: #555b6e;
+$col-brand-secondary: #66d6a4;
+$white: #fff;
+$black: #000;
+$fontDeco1: 'Great Vibes';
+$fontDeco2: 'La Belle Aurore';
+$lightHide: 0.7;
+
 .home-page {
 
   .text-zone {
@@ -10,7 +21,7 @@
   }
 
   h1 {
-    color: #fff;
+    color: $white;
     font-family: '';
     font-size: 53px;
     margin: 0;
@@ -18,52 +29,58 @@
     
     &::before {
       content: '<h1>';
-      font-family: 'Great Vibes';
+      font-family: $fontDeco1;
       font-weight: 500;
       color: #66d6a4;
       font-size: 24px;
       position: absolute;
       margin-top: -40px;
       left: 15px;
-      opacity: 0.7;
+      opacity: $lightHide;
     }
+    
+    &::after {
+      content: '</h1>';
+      font-family: $fontDeco1;
+      color: $col-brand-secondary;
+      font-size: 24px;
+      font-weight: 500;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: $lightHide;
+    }
+
     img {
       margin-bottom: -7px;
       width: 42px;
+      margin-left: 30px;
+      opacity: 0;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
     }
   }
+
+  h2 {
+    color: #c0d6cc;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 2.5px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  .flat-button {
+    color: #66d6a4;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid $col-brand-secondary;
+  }
 }
-
-
-
-
-
-// .home-page {
-
-//   .text-zone {
-//     position: absolute;
-//     left: 100%;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     width: 40%;
-//     max-height: 90%;
-//   }
-// }
-// h1 {
-//   color: #fff;
-//   font-size: 53px;
-//   margin: 0;
-//   font-family: 'Urbanist';
-
-//   &::before {
-//     content: '<h1>';
-//     font-family: 'Great Vibes';
-//     color: #66d6a4;
-//     font-size: 24px;
-//     position: absolute;
-//     margin-top: -40px;
-//   }
-//   img {
-//     width: 32px;
-//   }
-// }

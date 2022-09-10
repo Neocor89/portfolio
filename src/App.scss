@@ -1,21 +1,12 @@
-/* 
- *:: VARIABLES ::*/
+ /*--------
+  * IMPORTS *
+   --------*/
 
-/* COLORS */
-$col-brand-darkPrim: #414555;
-$col-brand-primary: #555b6e;
-$col-brand-secondary: #66d6a4;
-$white: #fff;
-$black: #000;
-
-
-
-/* 
- * 
- IMPORTS => */
-
+//: Animate animations
 @import 'animate.css';
 
+
+//: FONTS
 @font-face {
   font-family: 'Urbanist';
   src: url('./assets/fonts/Urbanist-Regular.ttf');
@@ -30,6 +21,11 @@ $black: #000;
 @font-face {
   font-family: 'Great Vibes';
   src: url('./assets/fonts/GreatVibes-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Calculative';
+  src: url('./assets/fonts/Calculative.ttf');
 }
 
 input,
