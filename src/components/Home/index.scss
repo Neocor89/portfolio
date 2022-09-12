@@ -35,11 +35,12 @@
       content: '</h1>';
       font-family: $fontDeco1;
       color: $col-brand-secondary;
-      font-size: 24px;
+      font-size: 23px;
       font-weight: 500;
       position: absolute;
-      margin-top: 18px;
       margin-left: 20px;
+      top: 180px;
+      right: 75px;
       @include fade-animation;
       opacity: $lightHide;
     }
@@ -58,7 +59,7 @@
 }
   h2 {
     color: #c0d6cc;
-    margin-top: 20px;
+    margin-top: 30px;
     @include formatting-title;
     animation: fadeIn 1s 1.8s backwards;
   }
