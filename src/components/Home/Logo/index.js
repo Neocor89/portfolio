@@ -16,13 +16,12 @@ const Logo = () => {
         height="797.000000pt"
         viewBox="0 0 560.000000 797.000000"
         xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid meet"
+        // preserveAspectRatio="xMidYMid meet"
       >
         <g
           className="svg-container"
           transform="translate(0.000000,797.000000) scale(0.100000,-0.100000)"
-          fill="#000000"
-          stroke="none"
+          fill="#555b6e"
         >
           <path
             d="M1906 7211 c-5 -7 -16 -74 -45 -256 l-6 -40 -135 -5 -135 -5 -17
