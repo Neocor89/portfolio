@@ -10,6 +10,7 @@
   bottom: 0;
   left: auto;
   margin: auto;
+  opacity: 0;
 
 
   svg {
@@ -35,5 +36,5 @@
 
 .svg-container {
   stroke: $col-brand-secondary;
-  stroke-width: 8px;
+  stroke-width: 12px;
 }

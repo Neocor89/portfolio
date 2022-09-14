@@ -1,14 +1,50 @@
 import './index.scss'
 import LogoLarge from '../../../assets/images/logo-portfolio-L.png'
+import gsap from 'gsap-trial'
+
+import { useRef, useEffect } from 'react'
+import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin'
 
 const Logo = () => {
-  // const bgRef = useRef()
-  // const outlineLogoRef = useRef()
-  // const solidLogoRef = useRef()
+  const bgRef = useRef()
+  const outlineLogoRef = useRef()
+  const solidLogoRef = useRef()
+
+  useEffect(() => {
+    gsap.registerPlugin(DrawSVGPlugin)
+
+    gsap
+      .timeline()
+      .to(bgRef.current, {
+        duration: 1,
+        opacity: 1,
+      })
+      .from(outlineLogoRef.current, {
+        drawSVG: 0,
+        duration: 20,
+      })
+
+    gsap.fromTo(
+      solidLogoRef.current,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        delay: 4,
+        duration: 4,
+      }
+    )
+  }, [])
 
   return (
-    <div className="logo-container">
-      <img className="solid-logo" src={LogoLarge} alt="logo portfolio large" />
+    <div className="logo-container" ref={bgRef}>
+      <img
+        ref={solidLogoRef}
+        className="solid-logo"
+        src={LogoLarge}
+        alt="logo portfolio large"
+      />
 
       <svg
         version="1.0"
@@ -24,6 +60,7 @@ const Logo = () => {
           fill="#555b6e"
         >
           <path
+            ref={outlineLogoRef}
             d="M1906 7211 c-5 -7 -16 -74 -45 -256 l-6 -40 -135 -5 -135 -5 -17
 -100 c-10 -55 -22 -129 -28 -165 -24 -154 -41 -259 -50 -310 -6 -30 -24 -140
 -40 -245 -16 -104 -34 -215 -39 -245 -25 -139 -31 -180 -41 -245 -6 -38 -15
