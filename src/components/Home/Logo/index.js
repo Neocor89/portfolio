@@ -1,8 +1,7 @@
+import { useRef, useEffect } from 'react'
 import './index.scss'
 import LogoLarge from '../../../assets/images/logo-portfolio-L.png'
 import gsap from 'gsap-trial'
-
-import { useRef, useEffect } from 'react'
 import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin'
 
 const Logo = () => {
@@ -20,7 +19,7 @@ const Logo = () => {
         opacity: 1,
       })
       .from(outlineLogoRef.current, {
-        drawSVG: 0,
+        drawSVG: 1,
         duration: 20,
       })
 
@@ -43,7 +42,7 @@ const Logo = () => {
         ref={solidLogoRef}
         className="solid-logo"
         src={LogoLarge}
-        alt="logo portfolio large"
+        alt="logo large S portfolio"
       />
 
       <svg
