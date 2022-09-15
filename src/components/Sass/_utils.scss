@@ -19,7 +19,7 @@
 
 /*-> VARIABLES - 
 - ANIMATION <-*/
- $lightHide: 0.7;
+ $lightHide: 0.5;
  $timeAnime: 1s;
  $durationAnime: 1,7s;
  $backAnime: backwards;
@@ -41,7 +41,16 @@
   letter-spacing: 3px;
 }
 
+@mixin formatting-tags {  
+  font-family: $fontDeco1;
+  color: $col-brand-secondary;
+  position: absolute;
+  font-size: $fsize-text;
+  font-weight: 500;
+  opacity: $lightHide;
+}
 
+//: Check 
 @mixin grid-position($grid: $grid-size, $gap: $col-gap) {
  display: grid;
  grid-template-columns: repeat(3, minmax(0, $grid));
@@ -49,9 +58,10 @@
 }
 
 /*
- <-----------
-:: RESPONSIVE MIXIXNS :: 
----------------------->
+ <----------
+: RESPONSIVE :
+:   MIXIXNS  :
+---------->
 */
 
 @mixin mobile-only {

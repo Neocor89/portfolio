@@ -13,36 +13,27 @@
 
   h1 {
     color: $white;
-    font-family: '';
-    font-size: 53px;
+    font-weight: 700;
+    font-size: $fsize-title;
     margin: 0;
     font-family: 'Urbanist';
     
     &::before {
       content: '<h1>';
-      font-family: $fontDeco1;
-      font-weight: 500;
-      color: $col-brand-secondary;
-      font-size: $fsize-text;
-      position: absolute;
+      @include formatting-tags;
       margin-top: -40px;
+      margin-left: 10px;
       left: 15px;
-      opacity: $lightHide;
+      // opacity: $lightHide;
     }
-    
-    
+        
     &::after {
       content: '</h1>';
-      font-family: $fontDeco1;
-      color: $col-brand-secondary;
-      font-size: 23px;
-      font-weight: 500;
-      position: absolute;
-      margin-left: 20px;
+      @include formatting-tags;
       top: 180px;
-      right: 215px;
+      right: 305px;
       @include fade-animation;
-      opacity: $lightHide;
+      // opacity: $lightHide;
     }
 
     img {
