@@ -24,7 +24,6 @@
       margin-top: -40px;
       margin-left: 10px;
       left: 15px;
-      // opacity: $lightHide;
     }
         
     &::after {
@@ -33,7 +32,6 @@
       top: 180px;
       right: 305px;
       @include fade-animation;
-      // opacity: $lightHide;
     }
 
     img {

@@ -1,9 +1,5 @@
 @import '../Sass/utils';
 
-/* --> 
- TODO : FIND and ADD my personal text in my about page
-<---*/
-
 .page {
   width: 100%;
   height: 100%;
@@ -44,7 +40,8 @@
   animation-delay: 1s;
 }
 
-.about-page {
+.about-page,
+.contact-page {
   .text-zone {
     position: absolute;
     left: 10%;

@@ -51,7 +51,6 @@ const Logo = () => {
         height="797.000000pt"
         viewBox="0 0 560.000000 797.000000"
         xmlns="http://www.w3.org/2000/svg"
-        // preserveAspectRatio="xMidYMid meet"
       >
         <g
           className="svg-container"
