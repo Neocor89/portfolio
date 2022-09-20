@@ -1,12 +1,12 @@
- /*--------
-  * IMPORTS *
-   --------*/
+ /*------------*
+  * IMPORTS <--*/
 
-//: Animate animations
+//: Animations
 @import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
 
 
-//: All FONTS
+//: Fonts
 @font-face {
   font-family: 'Urbanist';
   src: url('./assets/fonts/Urbanist-Regular.ttf');
@@ -31,4 +31,18 @@
 input,
 textarea {
   font-family: 'Urbanist';
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 80px;
+  right: 0;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }
