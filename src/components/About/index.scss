@@ -20,6 +20,43 @@
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
+
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px #b6f7d9;
+  }
+
+  .face1 {
+    transform: translateZ(99px) rotateY(-179deg) !important;
+  }
+
+  .face2 {
+    transform: rotateY(90deg) translateZ(100px) !important;
+  }
+
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px) !important;
+  }
+
+  .face4 {
+    transform: rotateY(179deg) rotateZ(90deg) translateZ(99px) !important;
+  }
+
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px) !important;
+  }
+
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px) !important;
+  }
 }
 
 @keyframes spincube {
@@ -38,5 +75,8 @@
   }
   66% {
     transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
   }
 }
