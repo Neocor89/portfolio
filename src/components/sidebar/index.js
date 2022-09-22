@@ -65,18 +65,19 @@ const Sidebar = () => (
         <a
           target="_blank"
           rel="noreferrer"
-          href="CREATE MY NEW PRO TWITTER ACCOUNT AND ADD LINK"
+          href="https://twitter.com/BenDevweb89"
         >
           <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
         </a>
       </li>
       <li>
-        <a target="_blank" rel="noreferrer" href=" STOP CODING IN THIS FIELD">
+        <a target="_blank" rel="noreferrer" href="STOP CODING IN THIS FIELD">
           <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
         </a>
       </li>
     </ul>
   </div>
 )
+//: Stop it add instagrm account
 
 export default Sidebar
