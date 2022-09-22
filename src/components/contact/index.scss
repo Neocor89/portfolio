@@ -70,3 +70,48 @@
     }
   }
 }
+
+.info-map {
+  position: absolute;
+  background-color: $black;
+  top: 41px;
+  right: 27%;
+  z-index: 999999;
+  width: 300px;
+  padding: 20px;
+  color: $white;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+  border-radius: 2px;
+
+  span {
+    font-size: 17px;
+    display: block;
+    padding-top: 20px;
+    color: $col-brand-secondary;
+  }
+}
+
+.map-wrap {
+  background: rgb(33.3%,40.8%,43.1%);
+  float: right;
+  width: 53%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+.layout-popup {
+  font-size: 12px;
+}
