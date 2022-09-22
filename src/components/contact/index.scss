@@ -1,1 +1,72 @@
 @import '../Sass/utils';
+
+.contact-form {
+  width: 100%;
+  margin-top: 40px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 15px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+      
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    @include formatting-contact-fileds;
+    padding: 0 20px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: $white;
+  }
+
+  textarea {
+    @include formatting-contact-fileds;
+    padding: 20px;
+    min-height: 150px;
+  }
+
+  .flat-button {
+    background:  $col-brand-secondary;
+    background: 0 0;
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid $col-brand-secondary;
+    float: left;
+    border-radius: 4px;
+    width: 30%;
+
+    &:hover {
+      background: $col-brand-secondary;
+      color: $col-brand-darkPrim;
+      opacity: 0.8;
+    }
+  }
+}

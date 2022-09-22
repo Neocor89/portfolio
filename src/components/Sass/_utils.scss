@@ -6,6 +6,7 @@
  /* -> 
  : Styles
  <--*/
+ $col-sidebar: #181818;
  $col-brand-darkPrim: #414555;
  $col-brand-primary: #555b6e;
  $col-brand-secondary: #66d6a4;
@@ -39,6 +40,16 @@
   font-family: sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
+}
+
+@mixin formatting-contact-fileds {  
+  width: 100%;
+  border: 0;
+  background: rgb(99, 114, 148);
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  box-sizing: border-box;
 }
 
 @mixin formatting-tags {  

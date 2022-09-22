@@ -12,6 +12,9 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <title>Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.0/dist/leaflet.css"
+    integrity="sha512-UkezATkM8unVC0R/Z9Kmq4gorjNoFwLMAWR/1yZpINW08I79jEKx/c8NlLSvvimcu7SL8pgeOnynxfRpe+5QpA=="
+    crossorigin="" />
 
 </head>
 
@@ -20,6 +23,14 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("xNNO1vlD8Jb0tk2rt");
+    })();
+  </script>
 </body>
 
 </html>

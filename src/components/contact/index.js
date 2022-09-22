@@ -1,10 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Loader from 'react-loaders'
-import AnimationLetters from '../AnimationLetters'
 import './index.scss'
+import AnimationLetters from '../AnimationLetters'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const refForm = useRef()
 
   const loadClass = useEffect(() => {
     setTimeout(() => {
@@ -12,6 +14,27 @@ const Contact = () => {
     }, 4000)
     return loadClass
   }, [])
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_kt2okta',
+        'template_4rtjq0l',
+        refForm.current,
+        'xNNO1vlD8Jb0tk2rt'
+      )
+      .then(
+        () => {
+          alert('Email sent successfully 🎉')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed sent please try again or use social-media Links !')
+        }
+      )
+  }
 
   return (
     <>
@@ -30,24 +53,32 @@ const Contact = () => {
             me using the link below
           </p>
           <div className="contact-form">
-            <from>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
-                </li>
-                <li className="half">
                   <input
-                    type="email"
-                    name="email"
-                    placeholder="email"
+                    type="text"
+                    htmlFor="name"
+                    name="name"
+                    placeholder="name"
                     required
                   />
                 </li>
                 <li className="half">
                   <input
+                    type="email"
+                    name="email"
+                    htmlFor="email"
+                    placeholder="email"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
                     placeholder="subject"
-                    type="subject"
+                    type="text"
                     name="subject"
+                    htmlFor="subject"
                     required
                   />
                 </li>
@@ -62,8 +93,18 @@ const Contact = () => {
                   <input type="submit" className="flat-button" value="Send" />
                 </li>
               </ul>
-            </from>
+            </form>
           </div>
+        </div>
+        <div className="info-map">
+          Ben Devweb
+          <br />
+          France
+          <br />
+          Bourgogne Auxerre,
+          <br /> 89000
+          <br />
+          <span>bendevweb@gmail.com</span>
         </div>
       </div>
       <Loader type="pacman" />
