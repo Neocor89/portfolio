@@ -45,7 +45,7 @@ const Home = () => {
             />
             <br />
           </h1>
-          <h2>Frontend Developer / Backend Developer / Fullstack Developer</h2>
+          <h2>Frontend Developer / Backend Developer & Fullstack</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

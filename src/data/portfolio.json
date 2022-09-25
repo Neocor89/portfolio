@@ -1,0 +1,16 @@
+{
+  "portfolio":[
+    {
+      "cover": "/portfolio/1/spotify-clone-project1.png",
+      "title": "Spotify clone project",
+      "description": "React18, JSX, TailwindCSS, RapidAPI, Redux",
+      "url": "https://bendevweb-spotify-clone.netlify.app"
+    },
+    {
+      "cover": "/portfolio/1/youtube-clone-project.png",
+      "title": "Youtube clone project",
+      "description": "React, JSX, MaterialUI, RapidAPI",
+      "url": "https://bendevweb-youtube-clone.netlify.app"
+    }
+  ]
+}
