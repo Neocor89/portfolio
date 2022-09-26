@@ -1,16 +1,30 @@
 {
   "portfolio":[
     {
-      "cover": "/portfolio/1/spotify-clone-project1.png",
-      "title": "Spotify clone project",
-      "description": "React18, JSX, TailwindCSS, RapidAPI, Redux",
+      "cover": "/portfolio/1/cover-project-youtube-clone.png",
+      "url": "https:bendevweb-youtube-clone.netlify.app"
+    },
+    {
+      "cover": "/portfolio/1/cover-spotify-clone-project.png",
       "url": "https://bendevweb-spotify-clone.netlify.app"
     },
     {
-      "cover": "/portfolio/1/youtube-clone-project.png",
-      "title": "Youtube clone project",
-      "description": "React, JSX, MaterialUI, RapidAPI",
-      "url": "https://bendevweb-youtube-clone.netlify.app"
+      "cover": "/portfolio/1/cover-project-youtube-clone.png",
+      "url": "https:bendevweb-youtube-clone.netlify.app"
+    },
+    {
+      "cover": "/portfolio/1/cover-spotify-clone-project.png",
+      "url": "https://bendevweb-spotify-clone.netlify.app"
+    },
+    {
+      "cover": "/portfolio/1/cover-project-youtube-clone.png",
+      "url": "https:bendevweb-youtube-clone.netlify.app"
+    },
+    {
+      "cover": "/portfolio/1/cover-spotify-clone-project.png",
+      "url": "https://bendevweb-spotify-clone.netlify.app"
     }
+    
   ]
 }
+

@@ -40,8 +40,14 @@
   animation-delay: 1s;
 }
 
-.about-page,
-.contact-page {
+/* 
+TODO
++ Rester sur cette implémentaion 
++ ou revenir sur l'ancienne ??
+*/
+
+.container.about-page,
+.container.contact-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -99,6 +105,7 @@
         animation-delay: 1.3s;
       }
     }
+    
   }
 
 

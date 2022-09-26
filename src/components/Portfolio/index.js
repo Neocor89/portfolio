@@ -18,21 +18,24 @@ const Portfolio = () => {
 
   const renderPortfolio = (portfolio) => {
     return (
-      <div className="images-container">
+      <div className="portfolio-container">
         {portfolio.map((port, idx) => {
           return (
-            <div className="image-box" key={idx}>
+            <div className="list-container_image" key={idx}>
               <img
                 src={port.cover}
+                onClick={() => window.open(port.url)}
                 className="portfolio-image"
                 alt="portfolio"
               />
               <div className="content">
-                <p className="title">{port.title}</p>
-                <h4 className="description">{port.description}</h4>
-                <button className="btn" onClick={() => window.open(port.url)}>
-                  Demo Project
-                </button>
+                <div className="info-container">
+                  {/* <p className="title">{port.title}</p>
+                  <h4 className="description">{port.description}</h4> */}
+                  {/* <button className="" onClick={() => window.open(port.url)}>
+                    Demo Project
+                  </button> */}
+                </div>
               </div>
             </div>
           )
@@ -45,7 +48,7 @@ const Portfolio = () => {
     <>
       <div className="container portfolio-page">
         <div className="text-zone">
-          <h1 className="page-title">
+          <h1 className="">
             <AnimationLetters
               index={15}
               letterClass={letterClass}
