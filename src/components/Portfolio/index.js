@@ -29,13 +29,7 @@ const Portfolio = () => {
                 alt="portfolio"
               />
               <div className="content">
-                <div className="info-container">
-                  {/* <p className="title">{port.title}</p>
-                  <h4 className="description">{port.description}</h4> */}
-                  {/* <button className="" onClick={() => window.open(port.url)}>
-                    Demo Project
-                  </button> */}
-                </div>
+                <div className="info-container"></div>
               </div>
             </div>
           )
