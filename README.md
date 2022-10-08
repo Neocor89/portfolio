@@ -1,6 +1,6 @@
-# Personal **Portfolio** 🏅🪅
+# Personal **Portfolio** 🏅
 
-<!-- 🙋‍♂️ 🪩
+<!-- 🙋‍♂️ 🪩 🪅
 ! Revoir Deployment Github pages
 npm install --save gh-pages
 "homepage": "https://Neocor89/portfolio",
@@ -11,6 +11,8 @@ npm install --save gh-pages
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
 #
+
+<img src="./public/portfolio/portfolio-readme-poster.png" />
 
 ## [<strong>React</strong>](https://github.com/facebook/create-react-app) Available Scripts
 
