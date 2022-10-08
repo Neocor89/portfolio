@@ -1,8 +1,9 @@
-# Personal **Portfolio** 🏅🪩🪅
+# Personal **Portfolio** 🏅🪅
 
-<!-- 🙋‍♂️
+<!-- 🙋‍♂️ 🪩
+! Revoir Deployment Github pages
 npm install --save gh-pages
-
+"homepage": "https://Neocor89/portfolio",
 -->
 
 > This project was bootstrapped with :
