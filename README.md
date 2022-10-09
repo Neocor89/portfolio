@@ -1,6 +1,6 @@
 # Personal **Portfolio** 🏅
 
-<p style="background-color: #555b6e; border-radius: 4px; text-align: center; color: #66d6a4; margin-top: 15px; margin-bottom: 15px;">My portfolio is still in development and is not yet responsive 😉</p>
+<p style="background-color: #555b6e; border-radius: 4px; text-align: center; color: #66d6a4; margin-top: 15px; margin-bottom: 15px; padding: 5px">My portfolio is still in development and is not yet responsive 😉</p>
 
 #
 
