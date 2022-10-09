@@ -29,20 +29,8 @@
       "url": "https://neocor89.github.io/responsive-landing-page/"
     },
     {
-      "cover": "/portfolio/1/cover-netflix-project.png",
-      "url": "https:bendevweb-youtube-clone.netlify.app"
-    },
-    {
-      "cover": "/portfolio/1/cover-spotify-clone-project.png",
-      "url": "https://bendevweb-spotify-clone.netlify.app"
-    },
-    {
-      "cover": "/portfolio/1/cover-youtube-project.png",
-      "url": "https:bendevweb-youtube-clone.netlify.app"
-    },
-    {
-      "cover": "/portfolio/1/cover-spotify-clone-project.png",
-      "url": "https://bendevweb-spotify-clone.netlify.app"
+      "cover": "/portfolio/1/cover-astro-project.png",
+      "url": "https://bendevweb-astro-website-clone.netlify.app/"
     }
     
   ]

@@ -40,12 +40,6 @@
   animation-delay: 1s;
 }
 
-/* 
-TODO
-+ Rester sur cette implémentaion 
-+ ou revenir sur l'ancienne ??
-*/
-
 .container.about-page,
 .container.contact-page {
   .text-zone {
@@ -107,8 +101,6 @@ TODO
     }
     
   }
-
-
 
   .text-animate-hover {
     &:hover {
