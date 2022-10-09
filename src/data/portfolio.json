@@ -31,6 +31,10 @@
     {
       "cover": "/portfolio/1/cover-astro-project.png",
       "url": "https://bendevweb-astro-website-clone.netlify.app/"
+    },
+    {
+      "cover": "/portfolio/1/cover-bank-project.png",
+      "url": "https://bendevweb-bank-website.netlify.app/"
     }
     
   ]
