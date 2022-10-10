@@ -21,13 +21,19 @@
 
 
 /*---> 
-  VARIABLES 
-  ANIMATION 
+ VARIABLES 
+ ANIMATION 
 ---*/
  $lightHide: 0.5;
  $timeAnime: 1s;
  $durationAnime: 1,7s;
  $backAnime: backwards;
+
+ $breakpoints: (
+  mobile: 600px,
+  desktop: 1200px,
+  tablet: 800px
+ );
 
 
 
@@ -78,14 +84,20 @@
   ----->
 */
 
-@mixin mobile-only {
- @media screen and (max-width: map-get($breakpoints, mobile)) {
+@mixin desktop__screens {
+ @media screen and (max-width: map-get($breakpoints, desktop)) {
      @content;        
  }
 }
 
-@mixin tablet-only {
+@mixin tablet__screens {
  @media screen and (max-width: map-get($breakpoints, tablet)) {
+     @content;        
+ }
+}
+
+@mixin mobile__screens {
+ @media screen and (max-width: map-get($breakpoints, mobile)) {
      @content;        
  }
 }

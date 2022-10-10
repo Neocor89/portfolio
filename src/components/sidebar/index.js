@@ -10,6 +10,7 @@ import LogoSubtitle from '../../assets/images/logo-subtitle.png'
 //: Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
+  faBars,
   faEnvelope,
   faHome,
   faSuitcase,
@@ -91,6 +92,12 @@ const Sidebar = () => (
         </a>
       </li>
     </ul>
+    <FontAwesomeIcon
+      icon={faBars}
+      color="#66d6a4"
+      size="3x"
+      className="hamburger-icon"
+    />
   </div>
 )
 //: Stop it add instagrm account
