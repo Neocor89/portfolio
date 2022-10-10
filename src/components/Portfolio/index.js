@@ -42,7 +42,7 @@ const Portfolio = () => {
     <>
       <div className="container portfolio-page">
         <div className="text-zone">
-          <h1 className="">
+          <h1>
             <AnimationLetters
               index={15}
               letterClass={letterClass}

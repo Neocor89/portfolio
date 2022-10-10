@@ -1,6 +1,13 @@
 @import '../Sass/utils';
 
 .container.portfolio-page {
+  @include desktop__screens {
+    position: initial;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
   .text-zone {
     position: absolute;
     left: 10%;
@@ -18,9 +25,6 @@
       margin-top: 0;
       position: relative;
       margin-bottom: 15px;
-      /* 
-      : last Change 
-      */
       left: 10px;
 
       &::before {
@@ -93,7 +97,16 @@
       transform-origin: top;
       transition: transform 0.4s ease-out;
       aspect-ratio: 1 / 1;
-      cursor: pointer; 
+      cursor: pointer;
+
+      @include desktop__screens {
+        display: flex;
+        // grid-template-columns: repeat(auto-fit, 1fr, 1fr);
+        justify-content: center;
+        align-items: center;
+      //   height: 200px;
+        max-width: calc(90% - 10px);
+       }
     }
 
     img {
