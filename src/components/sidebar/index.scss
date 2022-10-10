@@ -134,7 +134,7 @@
   }
 }
 
-.hamburger-icon {
+.hamburger-icon, .close-icon {
   display: none;
 }
 
@@ -160,11 +160,11 @@
       z-index: 2;
       margin: 0;
 
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       a:after {
         opacity: 1;
         position: initial;
@@ -175,9 +175,12 @@
       a svg {
         opacity: 1 !important;
       }
+      &.mobile-show {
+        display: block;
+      }
     }
 
-    .hamburger-icon {
+    .hamburger-icon, .close-icon {
       display: block;
       position: absolute;
       top: 15px;

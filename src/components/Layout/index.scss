@@ -4,11 +4,16 @@
   width: 100%;
   height: 100%;
   position: absolute;
+
+  @include desktop__screens {
+    position: initial;
+  }
 }
 
 .top-tags {
   bottom: auto;
   top: 35px;
+  //: #tags
 }
 
 .tags {
@@ -19,6 +24,10 @@
   left: 120px;
   font-size: $fsize-text;
   font-family: 'Great Vibes';
+
+  @include desktop__screens {
+    display: none;
+  }
 }
 
 .bottom-tag-html {
@@ -38,6 +47,12 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+
+  @include desktop__screens {
+    position: initial;
+    height: auto;
+    min-height: auto;
+  }
 }
 
 .container.about-page,

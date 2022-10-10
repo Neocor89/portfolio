@@ -12,12 +12,31 @@
   margin: auto;
   opacity: 0;
 
+  @include desktop__screens {
+    position: relative;
+    width: 250px;
+    height: auto;
+    top: 30px;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+    left: 0;
+  }
 
   svg {
     width: 100%;
     height: auto;
     bottom: 0;
     transform: rotateZ(30deg) !important;
+
+    @include desktop__screens {
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      margin: auto;
+    }
   }
   
   .solid-logo {

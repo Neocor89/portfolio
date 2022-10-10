@@ -9,6 +9,14 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+
+    @include desktop__screens {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
   }
 
   h1 {
@@ -24,6 +32,10 @@
       margin-top: -40px;
       margin-left: 10px;
       left: 15px;
+
+      @include desktop__screens {
+        display: none;
+      }
     }
         
     &::after {
@@ -32,6 +44,10 @@
       top: 180px;
       right: 305px;
       @include fade-animation;
+
+      @include desktop__screens {
+        display: none;
+      }
     }
 
     img {
@@ -63,6 +79,14 @@
     margin-top: 25px;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
+
+    @include desktop__screens {
+      //: #Modification
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 125px;
+    }
 
     &:hover {
       background: $col-brand-secondary;
