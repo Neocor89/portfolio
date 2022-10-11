@@ -9,6 +9,7 @@ const Logo = () => {
   const outlineLogoRef = useRef()
   const solidLogoRef = useRef()
 
+  //: GSAP animation of the main logo
   useEffect(() => {
     gsap.registerPlugin(DrawSVGPlugin)
 

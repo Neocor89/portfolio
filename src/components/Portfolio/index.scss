@@ -90,12 +90,12 @@
   }
 }
 
-.portfolio-container {  //: image-container
+.portfolio-container {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
   width: 1000px;
-  height: 100%; //: #Add
+  height: 100%;
   margin-top: 70px;
   justify-content: space-between;
   align-items: center;
@@ -122,7 +122,7 @@
 
 }
   
-  .list-container_image { //: image-box
+  .list-container_image {
     position: relative;
     padding-bottom: 10px;
     height: 200px;
@@ -139,7 +139,7 @@
     }
     
     @include mobile__screens {
-      width: max-content; //:#MODIF
+      width: max-content;
       height: 160px;
       margin-bottom: 0px;
 
@@ -153,7 +153,7 @@
       object-fit: cover;
 
       @include desktop__screens {
-        width: max-content; //:#ADD
+        width: max-content;
         height: 150px;
        }
 

@@ -1,10 +1,11 @@
 /* -------->
  * VARIABLES
- --- */
+ <------- */
 
 
- /* ---->
- : Styles --*/
+ /* --->
+ : Styles 
+ <--- */
  $col-sidebar: #181818;
  $col-brand-darkPrim: #414555;
  $col-brand-primary: #555b6e;
@@ -18,15 +19,19 @@
  $fontDeco1: 'Great Vibes';
  $fontDeco2: 'La Belle Aurore';
 
-/* --------> 
+/* -----> 
  : VARIABLES 
  : ANIMATION 
- ---*/
+ <-----*/
  $lightHide: 0.5;
  $timeAnime: 1s;
  $durationAnime: 1,7s;
  $backAnime: backwards;
-
+ 
+ 
+ /* ------> 
+  : Breakpoints  
+  <------*/
  $breakpoints: (
   mobile: 600px,
   desktop: 1200px,
@@ -35,9 +40,10 @@
 
 
 
-/* --- 
+/* ----->
  * MIXINS
- --- */
+ <---- */
+
  @mixin fade-animation($time: $timeAnime, $delay: $durationAnime, $type: $backAnime) {
   animation: fadeIn $time $delay $type;
 }
@@ -68,17 +74,11 @@
   opacity: $lightHide;
 }
 
-//: Check 
-@mixin grid-position($grid: $grid-size, $gap: $col-gap) {
- display: grid;
- grid-template-columns: repeat(3, minmax(0, $grid));
- column-gap: $gap;
-}
 
 /*
   <-----------
-: RESPONSIVE :
-:   MIXIXNS  :
+* RESPONSIVE *
+*   MIXIXNS  *
   ----------->
 */
 

@@ -1,5 +1,6 @@
 import './index.scss'
 
+//: Animation logic
 const AnimationLetters = ({ letterClass, strArray, index }) => {
   return (
     <span>

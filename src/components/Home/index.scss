@@ -82,7 +82,6 @@
     white-space: nowrap;
 
     @include desktop__screens {
-      //: #Modification
       float: none;
       display: block;
       margin: 20px auto 0 auto;

@@ -18,11 +18,9 @@ const Portfolio = () => {
 
   const renderPortfolio = (portfolio) => {
     return (
-      //: image-container
       <div className="portfolio-container">
         {portfolio.map((port, idx) => {
           return (
-            //: image-box
             <div className="list-container_image" key={idx}>
               <img
                 src={port.cover}

@@ -16,6 +16,7 @@ const Contact = () => {
     return loadClass
   }, [])
 
+  //: Implementing emailjs
   const sendEmail = (e) => {
     e.preventDefault()
 

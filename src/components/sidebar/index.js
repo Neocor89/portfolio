@@ -1,13 +1,8 @@
 import { Link, NavLink } from 'react-router-dom'
-
-//: scss
 import './index.scss'
-
-//: Images
 import LogoPortfolio from '../../assets/images/logo-portfolio.png'
 import LogoSubtitle from '../../assets/images/logo-subtitle.png'
 
-//: Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
@@ -110,7 +105,7 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noreferrer" href="STOP CODING IN THIS FIELD">
+          <a target="_blank" rel="noreferrer" href="https://instagram.com">
             <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
           </a>
         </li>

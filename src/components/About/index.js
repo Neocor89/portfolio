@@ -14,14 +14,13 @@ import Loader from 'react-loaders'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-
+  //: Animation Management
   const loadClass = useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
     return loadClass
   }, [])
-  //: For of Cube face5 => faNodeJs + import {faNodeJs} from '@fortawesome/free-brands-svg-icons'
   return (
     <>
       <div className="container about-page">
