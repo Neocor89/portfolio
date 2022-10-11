@@ -145,6 +145,12 @@
     height: auto;
     min-height: auto;
 
+    @include mobile__screens {
+      // width: max-content;
+      // justify-content: start;
+      // flex-wrap: wrap;
+    }
+
     ul, nav {
       display: none;
     }
