@@ -6,8 +6,6 @@
 
 <!-- 🙋‍♂️ 🪩 🪅
 ! Revoir Deployment Github pages
-npm install --save gh-pages
-"homepage": "https://Neocor89.github.io/portfolio",
 I am a developer passionate about creating through programming,
 but also about new technologies and learning.
 I like my code to be efficient and clean
