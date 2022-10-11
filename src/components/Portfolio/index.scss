@@ -2,10 +2,14 @@
 
 .container.portfolio-page {
   @include desktop__screens {
+  }
+
+  .portfolio-page {
     position: initial;
-    width: 100%;
+    width: calc(100% - 30px);
     padding: 30px;
-    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
   }
 
   .text-zone {
@@ -17,6 +21,11 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 100%;
+    
+    @include desktop__screens {
+      left: 5%;
+    
+    }
 
     h1 {
       font-size: $fsize-title;
@@ -26,6 +35,7 @@
       position: relative;
       margin-bottom: 15px;
       left: 10px;
+      bottom: -40px;
 
       @include desktop__screens {
         margin-top: 20px;
@@ -80,53 +90,88 @@
   }
 }
 
-.portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 175px);
+.portfolio-container {  //: image-container
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 99vh;
+  height: max-content; //: #Add
+  margin-top: 70px;
   justify-content: space-between;
   align-items: center;
-  width: 130vh;
-  height: 60vh;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include desktop__screens {
+    width: 850px;
+    height: 100%;
+    justify-content: start;
+  }
+
+  @include tablet__screens {
+    width: 550px;
+    justify-content: center;
+  }
+
+  @include mobile__screens {
+    width: 420px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+}
   
-  .list-container_image {
-    &.list-container_image, .portfolio-image, img {
-     width: 96%;
-     height: 90%;
-     position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      transform-origin: top;
-      transition: transform 0.4s ease-out;
-      aspect-ratio: 1 / 1;
-      cursor: pointer;
+  .list-container_image { //: image-box
+    position: relative;
+    padding-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.4s ease-out;
+    cursor: pointer;
+
+    @include desktop__screens {
+      width: 155px;
+      height: 170px;
+      padding-bottom: 0;
+      padding-left: 4px;
+    }
+    
+    @include mobile__screens {
+      width: max-content;
+      height: 160px;
+      margin-bottom: 0px;
+
+    }
+  }
+
+    .portfolio-image {
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
 
       @include desktop__screens {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      //   height: 200px;
-        max-width: calc(90% - 10px);
+        width: 150px;
+        height: 150px;
        }
+
+       @include mobile__screens {
+        width: 120px;
+        height: 130px;
+        margin-left: 5px;
+        margin: 6px 0 0 0;
+      }
     }
 
     img {
       height: 100%;
+      width: 100%;
+      margin-top: 10px;
       border-radius: 15px;
+      object-fit: cover;
+
       &:hover {
-        transform: scale(1.101);
+        transform: scale(1.03);
       }
     }
-
-    .content {
-      position: absolute;
-      justify-content: center;
-      border-radius: 3px;
-      overflow: hidden;
-    }
-  }
-
-}
