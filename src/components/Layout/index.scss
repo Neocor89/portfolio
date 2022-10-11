@@ -76,6 +76,10 @@
       margin-bottom: 40px;
       left: 10px;
 
+      @include desktop__screens {
+        margin-left: 20px;
+      }
+
       &::before {
         content: '<h1>';
         @include formatting-tags;

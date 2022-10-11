@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { useEffect } from 'react'
+import { useEffect } from 'react' /* Add Hooks together */
 import Loader from 'react-loaders'
 import AnimationLetters from '../AnimationLetters'
 import './index.scss'

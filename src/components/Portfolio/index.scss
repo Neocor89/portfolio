@@ -4,7 +4,7 @@
   @include desktop__screens {
     position: initial;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
   }
 
@@ -26,6 +26,11 @@
       position: relative;
       margin-bottom: 15px;
       left: 10px;
+
+      @include desktop__screens {
+        margin-top: 20px;
+        width: max-content;
+      }
 
       &::before {
         content: '<h1>';
@@ -101,7 +106,6 @@
 
       @include desktop__screens {
         display: flex;
-        // grid-template-columns: repeat(auto-fit, 1fr, 1fr);
         justify-content: center;
         align-items: center;
       //   height: 200px;

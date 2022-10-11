@@ -1,11 +1,10 @@
-/* --- 
+/* -------->
  * VARIABLES
  --- */
 
 
- /*---> 
- Styles
- --*/
+ /* ---->
+ : Styles --*/
  $col-sidebar: #181818;
  $col-brand-darkPrim: #414555;
  $col-brand-primary: #555b6e;
@@ -14,16 +13,15 @@
  $black: #000;
  $col-jet: #333;
  $fsize-title: 50px;
+ $fsize-responsive-title: 44px;
  $fsize-text: 24px;
  $fontDeco1: 'Great Vibes';
  $fontDeco2: 'La Belle Aurore';
 
-
-
-/*---> 
- VARIABLES 
- ANIMATION 
----*/
+/* --------> 
+ : VARIABLES 
+ : ANIMATION 
+ ---*/
  $lightHide: 0.5;
  $timeAnime: 1s;
  $durationAnime: 1,7s;
@@ -78,10 +76,10 @@
 }
 
 /*
-       <------
+  <-----------
 : RESPONSIVE :
 :   MIXIXNS  :
-  ----->
+  ----------->
 */
 
 @mixin desktop__screens {
