@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react'
 import './index.scss'
 import LogoLarge from '../../../assets/images/logo-portfolio-L.png'
 import gsap from 'gsap-trial'
-import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin'
+// import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin'
 
 const Logo = () => {
   const bgRef = useRef()
@@ -11,7 +11,7 @@ const Logo = () => {
 
   //: GSAP animation of the main logo
   useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin)
+    // gsap.registerPlugin(DrawSVGPlugin)
 
     gsap
       .timeline()
@@ -47,6 +47,7 @@ const Logo = () => {
       />
 
       <svg
+        id="letter"
         version="1.0"
         width="560.000000pt"
         height="797.000000pt"
