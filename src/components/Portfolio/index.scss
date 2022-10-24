@@ -24,8 +24,12 @@
     
     @include desktop__screens {
       left: 5%;
-    
     }
+
+
+    // @include mobile__screens {
+    // }
+
 
     h1 {
       font-size: $fsize-title;
@@ -40,6 +44,10 @@
       @include desktop__screens {
         margin-top: 20px;
         width: max-content;
+      }
+      
+      @include tablet__screens {
+        font-size: 40px;
       }
 
       &::before {
@@ -111,7 +119,7 @@
 
   @include tablet__screens {
     width: 575px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   @include mobile__screens {
@@ -132,17 +140,22 @@
     cursor: pointer;
 
     @include desktop__screens {
-      width: 175px;
-      height: 170px;
+      width: 135px;
+      height: 115px;
       padding-bottom: 0;
       padding-left: 4px;
     }
     
+    // @include tablet__screens {
+    //   width: max-content;
+    //   height: 100px;
+    //   margin-bottom: 0px;
+    // }
+
     @include mobile__screens {
       width: max-content;
-      height: 160px;
+      height: 78px;
       margin-bottom: 0px;
-
     }
   }
 
@@ -157,9 +170,13 @@
         height: 150px;
        }
 
+       @include tablet__screens {
+          height: 110px;
+        }
+
        @include mobile__screens {
-        width: 120px;
-        height: 130px;
+        width: 79px;
+        height: 71px;
         margin-left: 5px;
         margin: 6px 0 0 0;
       }

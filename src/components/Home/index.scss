@@ -68,6 +68,10 @@
     margin-top: 30px;
     @include formatting-title;
     animation: fadeIn 1s 1.8s backwards;
+
+    @include mobile__screens {
+      font-size: 13px;
+    }
   }
   
   .flat-button {
@@ -86,6 +90,13 @@
       display: block;
       margin: 20px auto 0 auto;
       width: 125px;
+    }
+    
+    @include mobile__screens {
+      width: 101px;
+      font-size: 11px;
+      font-weight: 600;
+
     }
 
     &:hover {

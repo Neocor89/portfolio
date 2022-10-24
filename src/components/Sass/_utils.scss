@@ -34,7 +34,7 @@
   <------*/
  $breakpoints: (
   mobile: 600px,
-  desktop: 1200px,
+  desktop: 1100px,
   tablet: 900px
  );
 
@@ -46,6 +46,10 @@
 
  @mixin fade-animation($time: $timeAnime, $delay: $durationAnime, $type: $backAnime) {
   animation: fadeIn $time $delay $type;
+}
+
+@mixin mobile-title {
+  font-size: 40px;
 }
 
 @mixin formatting-title {  
@@ -78,7 +82,6 @@
 /*
   <-----------
 * RESPONSIVE *
-*   MIXIXNS  *
   ----------->
 */
 

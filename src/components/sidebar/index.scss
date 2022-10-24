@@ -12,6 +12,10 @@
   @include desktop__screens {
     margin-bottom: 50px;
   }
+  
+  @include tablet__screens {
+    margin-bottom: 5px;
+  }
 
   .logo {
     display: block;
@@ -145,8 +149,8 @@
 .hamburger-icon, .close-icon {
   display: none;
 }
-
-@media screen and (max-width: 1200px) {
+//#ChangeMap
+@media screen and (max-width: 1100px) {
   .nav-bar {
     background: transparent;
     position: initial;

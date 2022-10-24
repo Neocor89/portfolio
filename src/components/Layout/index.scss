@@ -79,6 +79,10 @@
         margin-top: 20px;
       }
 
+      @include tablet__screens {
+        @include mobile-title;
+      }
+
       &::before {
         content: '<h1>';
         @include formatting-tags;
@@ -126,8 +130,8 @@
     }
   }
 }
-
-@media screen and (max-width: 1200px) {
+//#ChangeMap
+@media screen and (max-width: 1100px) {
   .container {
     &.about-page,
     &.contact-page,
