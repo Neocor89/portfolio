@@ -47,7 +47,8 @@
       }
       
       @include tablet__screens {
-        font-size: 40px;
+        left: 5px;
+        font-size: 38px;
       }
 
       &::before {
@@ -123,9 +124,11 @@
   }
 
   @include mobile__screens {
-    width: 420px;
+    width: 310px;
     justify-content: start;
     flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 80px;
   }
 
 }
@@ -145,17 +148,12 @@
       padding-bottom: 0;
       padding-left: 4px;
     }
-    
-    // @include tablet__screens {
-    //   width: max-content;
-    //   height: 100px;
-    //   margin-bottom: 0px;
-    // }
 
     @include mobile__screens {
       width: max-content;
       height: 78px;
       margin-bottom: 0px;
+      padding-left: 0px;
     }
   }
 

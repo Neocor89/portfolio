@@ -26,6 +26,12 @@
     font-size: $fsize-title;
     margin: 0;
     font-family: 'Urbanist';
+
+    @include mobile__screens {
+      // @include mobile-title;
+  
+      font-size: 38px;
+    }
     
     &::before {
       content: '<h1>';
@@ -70,7 +76,8 @@
     animation: fadeIn 1s 1.8s backwards;
 
     @include mobile__screens {
-      font-size: 13px;
+      font-size: 11px;
+      margin-top: 5px;
     }
   }
   

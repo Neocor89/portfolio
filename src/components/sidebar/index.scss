@@ -29,6 +29,11 @@
 
       @include desktop__screens {
         width: 34px;
+        width: 30px;
+      }
+
+      @include mobile__screens {
+        width: 30px;
       }
     
       &.sub-logo {
