@@ -17,6 +17,10 @@
     height: 0%;
     overflow: visible;
   }
+  
+  @include tablet__screens {
+    padding-top: 5%;
+  }
 }
 
 .cube-spinner {

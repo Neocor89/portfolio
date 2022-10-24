@@ -45,11 +45,19 @@
   input[type="email"] {
     @include formatting-contact-fileds;
     padding: 0 20px;
+
+    @include mobile__screens {
+      font-size: 13px;
+    }
   }
 
   input::placeholder,
   textarea::placeholder {
     color: $white;
+
+    @include mobile__screens {
+      font-size: 13px;
+    }
   }
 
   textarea {
@@ -69,6 +77,18 @@
     float: left;
     border-radius: 4px;
     width: 30%;
+
+    @include tablet__screens {
+      font-size: 14px;
+      width: 20%;
+      font-weight: 500;
+    }
+
+    @include mobile__screens {
+      font-size: 14px;
+      width: 40%;
+      font-weight: 500;
+    }
     
     &:hover {
       background: $col-brand-secondary;
@@ -127,6 +147,10 @@
     width: 100%;
     height: 400px;
     margin: 0;
+  }
+
+  @include tablet__screens {
+    display: none;
   }
 }
 
