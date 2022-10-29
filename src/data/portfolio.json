@@ -25,18 +25,21 @@
       "url": "https://neocor89.github.io/Benoit-C-P4/"
     },
     {
-      "cover": "/portfolio/1/cover-landingpage-project.png",
-      "url": "https://neocor89.github.io/responsive-landing-page/"
-    },
-    {
       "cover": "/portfolio/1/cover-astro-project.png",
       "url": "https://bendevweb-astro-website-clone.netlify.app/"
     },
     {
       "cover": "/portfolio/1/cover-bank-project.png",
       "url": "https://bendevweb-bank-website.netlify.app/"
+    },
+    {
+      "cover": "/portfolio/1/cover-dapp-nft-market-project.png",
+      "url": "https://nft-market-a5657ba76-neocor89.vercel.app/"
+    },
+    {
+      "cover": "/portfolio/1/cover-dapp-messenger-project.png",
+      "url": "https://chat-dapp-web3-4n07i0jvr-neocor89.vercel.app/"
     }
     
   ]
 }
-

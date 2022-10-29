@@ -33,9 +33,11 @@
   : Breakpoints  
   <------*/
  $breakpoints: (
-  mobile: 600px,
-  desktop: 1100px,
-  tablet: 900px
+   desktop: 1100px,
+   tablet: 980px,
+   sm_tablet: 765px,
+   mobile: 600px,
+   sm_mobile: 400px,
  );
 
 
@@ -97,8 +99,20 @@
  }
 }
 
+@mixin small-tablet__screens {
+ @media screen and (max-width: map-get($breakpoints, sm_tablet)) {
+     @content;        
+ }
+}
+
 @mixin mobile__screens {
  @media screen and (max-width: map-get($breakpoints, mobile)) {
+     @content;        
+ }
+}
+
+@mixin small-mobile__screens {
+ @media screen and (max-width: map-get($breakpoints, sm_mobile)) {
      @content;        
  }
 }
