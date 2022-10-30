@@ -19,6 +19,8 @@
 
 #
 
+## **Who am I?** 🤔
+
 My name is Ben and I am a web developer completely passionate about programming,
 new technologies and especially blockchain and the new web3.0.
 
@@ -29,6 +31,14 @@ In the contact part of the portfolio, you will find all the information,
 to know where I live and where to contact me.
 
 #
+
+## **Visual rendering and Portfolio access** 🤗
+
+> ⬇️ To vist `PORTFOLIO` click on the button bellow 👨‍💻
+
+<div style="margin: 15px 0;"></div>
+
+[<img src="https://res.cloudinary.com/dwoifuutn/image/upload/v1667143559/button-visit-portfolio_jtwmxh.png"  />](https://portfolio-k5jc8id2i-neocor89.vercel.app/)
 
 <div style="margin-top: 15px"></div>
 <img src="./public/portfolio/portfolio-readme-poster.png" />
