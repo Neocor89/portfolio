@@ -10,7 +10,6 @@
   min-height: 500px;
 
   @include desktop__screens {
-    // margin-bottom: 50px;
     margin-bottom: 10px;
   }
   
@@ -51,10 +50,6 @@
     top: 50%;
     margin-top: -120px;
     width: 100%;
-
-    // @include desktop__screens {
-      
-    // }
 
     a {
       font-size: 22px;
@@ -155,7 +150,7 @@
 .hamburger-icon, .close-icon {
   display: none;
 }
-//#ChangeMap
+
 @media screen and (max-width: 1100px) {
   .nav-bar {
     background: transparent;

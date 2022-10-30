@@ -144,10 +144,6 @@
 
   @include desktop__screens {
     display: none;
-    // float: none;
-    // width: 100%;
-    // height: 400px;
-    // margin: 0;
   }
 
   @include tablet__screens {
