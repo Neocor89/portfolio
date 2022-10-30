@@ -143,10 +143,11 @@
   animation-fill-mode: forwards;
 
   @include desktop__screens {
-    float: none;
-    width: 100%;
-    height: 400px;
-    margin: 0;
+    display: none;
+    // float: none;
+    // width: 100%;
+    // height: 400px;
+    // margin: 0;
   }
 
   @include tablet__screens {

@@ -31,6 +31,10 @@
 
 .bottom-tag-html {
   margin-left: -20px;
+
+  @include desktop__screens {
+    display: none;
+  }
 }
 
 .container {
