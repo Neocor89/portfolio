@@ -1,8 +1,5 @@
 # Personal **Portfolio** 🏅
 
-<!-- 🙋‍♂️ 🪩 🪅
--->
-
 > This project was created with :
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) <span style="margin: 25px 10px 0px 0px"></span> ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) <span style="margin: 10px"></span>
